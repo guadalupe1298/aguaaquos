@@ -1,0 +1,24 @@
+<div class="success-modal" id="payment-modal" role="dialog" aria-modal="true" aria-labelledby="payment-title"
+      hidden>
+      <div class="success-card payment-card">
+        <button class="success-close" type="button" data-close-payment aria-label="Cerrar">×</button>
+        <div class="payment-lock" aria-hidden="true">🔒</div>
+        <span class="eyebrow">Último paso</span>
+        <h2 id="payment-title">Registra tu forma de pago</h2>
+        <p>Tu tarjeta se registrará en una ventana segura para los cobros mensuales.</p>
+        <ul class="payment-promises">
+          <li>No se realizará ningún cobro hasta 30 días después de la instalación.</li>
+          <li>La instalación es sin costo por la promoción de este mes.</li>
+          <li>Puedes cancelar en cualquier momento, sin penalización.</li>
+        </ul>
+        <details class="payment-terms">
+          <summary>Ver términos y condiciones</summary>
+          <p>Autorizas el cargo mensual recurrente correspondiente a tu plan a partir de 30 días después de la
+            instalación. Puedes cancelar en cualquier momento sin penalización ni costo de retiro.</p>
+        </details>
+        <label class="payment-accept"><input type="checkbox" id="accept-terms"> <span>He leído y acepto los términos y
+            condiciones.</span></label>
+        <button class="primary" type="button" id="secure-payment-button" disabled>Continuar al pago seguro →</button>
+        <p class="payment-status" id="payment-status" aria-live="polite"></p>
+      </div>
+    </div>

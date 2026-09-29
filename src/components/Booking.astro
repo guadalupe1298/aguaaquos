@@ -1,0 +1,95 @@
+<section class="appointment" id="agendar">
+      <div class="shell appointment-grid">
+        <div class="appointment-copy">
+          <h2>Agenda tu instalación.</h2>
+          <div class="appointment-points">
+            <span>✓ El plan se asigna por número de personas</span>
+            <span>✓ Tú eliges fecha y horario</span>
+            <span>✓ Sin plazo forzoso</span>
+          </div>
+        </div>
+        <div class="formbox">
+          <div id="agendar-form-state">
+            <form id="zohoForm"
+              action="https://forms.zohopublic.com/aquoslife1/form/LandingPageRegistroForm/formperma/I7_5t5F4LoxADbUq3lVBqKY4A7jIS4fxVeFxs1L831M/htmlRecords/submit"
+              method="POST" enctype="multipart/form-data" accept-charset="UTF-8" target="hidden_iframe">
+              <input type="hidden" name="zf_referrer_name" value="">
+              <input type="hidden" name="zf_redirect_url" value="">
+              <input type="hidden" name="zc_gad" value="">
+              <input type="hidden" name="Dropdown" value="Landing Page Registro">
+              <input type="hidden" id="plan-zoho" name="Dropdown1" value="">
+              <input type="hidden" id="install-date-zoho" name="Date" value="">
+              <input type="hidden" id="contact-preference-zoho" name="Dropdown3" value="">
+              <input id="email" name="Email" type="hidden" value="">
+              <input id="contact-preference" type="hidden" value="WhatsApp">
+              <input id="promotion" type="hidden" value="Instalación y un mes gratis">
+              <div class="v3-form-step active" data-form-step="1">
+                <div class="form-grid">
+                  <div>
+                    <label for="firstname">Nombre</label>
+                    <input id="firstname" name="SingleLine1" autocomplete="name" placeholder="¿Cómo te llamas?"
+                      required>
+                  </div>
+                  <div>
+                    <label for="phone">WhatsApp</label>
+                    <input id="phone" name="PhoneNumber_countrycode" type="tel" inputmode="tel" autocomplete="tel"
+                      placeholder="10 dígitos" required>
+                  </div>
+                  <div>
+                    <label for="postal">Código postal</label>
+                    <input id="postal" name="SingleLine2" inputmode="numeric" autocomplete="postal-code" maxlength="5"
+                      placeholder="Código postal de tu domicilio" required>
+                  </div>
+                  <div>
+                    <label for="household-size">Personas en casa</label>
+                    <select id="household-size" required>
+                      <option value="" disabled selected>Selecciona una opción</option>
+                      <option value="2">1–2 personas · $249/mes</option>
+                      <option value="4">3–4 personas · $299/mes</option>
+                      <option value="6">5–6 personas · $369/mes</option>
+                      <option value="7">Más de 6 personas · Atención personalizada</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="primary" type="button" id="v3-continue">Continuar →</button>
+              </div>
+              <div class="v3-form-step" data-form-step="2" hidden>
+                <p class="v3-step-label">Elige fecha y horario</p>
+                <div class="form-grid">
+                  <div>
+                    <label for="install-date">Fecha preferida de instalación</label>
+                    <input id="install-date" type="date" required>
+                  </div>
+                  <div>
+                    <label for="time">Horario</label>
+                    <select id="time" name="Dropdown2" required>
+                      <option value="" disabled selected>Elige un horario</option>
+                      <option>Mañana</option>
+                      <option>Tarde</option>
+                      <option>Me es indiferente</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="v3-form-actions">
+                  <button class="v3-back" type="button" id="v3-back">← Regresar</button>
+                  <button class="primary" type="button" data-booking="submit">Confirmar mi instalación →</button>
+                </div>
+                <button class="form-whatsapp" type="button" data-booking="whatsapp">Prefiero continuar por
+                  WhatsApp</button>
+              </div>
+            </form>
+          </div>
+          <div id="agendar-success-state" style="display:none">
+            <h3>¡Listo!</h3>
+            <p class="formnote" style="font-size:1rem!important;margin-top:4px">Recibimos tus datos. Nuestro equipo
+              confirmará cobertura, disponibilidad y condiciones, y te contactará pronto.</p>
+          </div>
+        </div>
+      </div>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" aria-hidden="true"
+        title="Envío de formulario AquosLife">
+      </iframe>
+      <iframe name="lead_iframe" id="lead_iframe" style="display:none" aria-hidden="true"
+        title="Registro inicial AquosLife">
+      </iframe>
+    </section>

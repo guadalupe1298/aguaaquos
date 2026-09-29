@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+import '../styles/responsive.css';
+interface Props { title?: string; }
+const { title = 'AquosLife V3 | Deja de cargar garrafones' } = Astro.props;
+---
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{title}</title>
+  <meta name="description"
+    content="AquosLife instala y mantiene tu sistema de ultrapurificación. Tú solo abres la llave. Agenda tu instalación.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231260aa'/%3E%3Cpath d='M32 9C24 22 17 29 17 39a15 15 0 0 0 30 0c0-10-7-17-15-30Z' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+<slot />
+<script>
+import '../scripts/landing.js';
+</script>
+</body>
+</html>
+
